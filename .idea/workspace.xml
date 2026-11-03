@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e3c1f44-3e2a-459c-a841-b18cac7fff98" name="Changes" comment="" />
+    <list default="true" id="9e3c1f44-3e2a-459c-a841-b18cac7fff98" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/bank/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bank/AccountDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bankmangementsystem.sql" beforeDir="false" afterPath="$PROJECT_DIR$/bankmangementsystem.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bank/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bank/UserDAO.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,20 +37,55 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DBConnection.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/g-drive/bank-management-system/mysql-connector-j-8.4.0.jar",
-    "onboarding.tips.debug.path": "D:/Bank_Management_System/src/main/java/com/springcore/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DBConnection.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/g-drive/bank-management-system/mysql-connector-j-8.4.0.jar&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Bank_Management_System/src/main/java/com/springcore/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="DBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bank.DBConnection" />
+      <module name="Bank-Mangement-System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bank.Main" />
+      <module name="Bank-Mangement-System" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DBConnection" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

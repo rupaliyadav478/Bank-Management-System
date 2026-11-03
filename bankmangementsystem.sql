@@ -40,3 +40,5 @@ CREATE TABLE transactions (
     FOREIGN KEY (related_account_id) REFERENCES accounts(id)
 );
 SHOW TABLES;
+
+DESCRIBE users;

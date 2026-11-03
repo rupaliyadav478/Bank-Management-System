@@ -1,4 +1,5 @@
 package com.bank;
+import java.math.BigDecimal;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -47,12 +48,35 @@ public class Main {
                     boolean registered = userDAO.registerUser(newUser);
 
                     if (registered) {
+
                         System.out.println("\nRegistration Successful!");
+
+                        int userId = userDAO.getUserIdByUsername(regUsername);
+
+                        AccountDAO accountDAO = new AccountDAO();
+
+                        String accountNumber = "BANK" + System.currentTimeMillis();
+
+                        boolean accountCreated = accountDAO.createAccount(
+                                userId,
+                                accountNumber,
+                                "SAVINGS",
+                                "NOT_SET",
+                                "NOT_SET"
+                        );
+
+                        if (accountCreated) {
+                            System.out.println("Bank Account Created Successfully!");
+                            System.out.println("Account Number: " + accountNumber);
+                            System.out.println("Account Type: SAVINGS");
+                        } else {
+                            System.out.println("Bank Account Creation Failed!");
+                        }
+
                     } else {
                         System.out.println("\nRegistration Failed!");
                     }
-                    break;
-
+                   break;
                 // USER LOGIN
                 case 2:
                     System.out.println("\n===== USER LOGIN =====");
@@ -68,6 +92,18 @@ public class Main {
                     if (user != null) {
                         System.out.println("\nLogin Successful!");
                         System.out.println("Welcome, " + user.getUsername());
+                        System.out.print("Enter deposit amount: ");
+                        BigDecimal amount = new BigDecimal(sc.nextLine());
+
+                        AccountDAO accountDAO = new AccountDAO();
+
+                        boolean deposited = accountDAO.deposit(user.getUserId(), amount);
+
+                        if (deposited) {
+                            System.out.println("Amount deposited successfully!");
+                        } else {
+                            System.out.println("Deposit failed!");
+                        }
                     } else {
                         System.out.println("\nInvalid Username or Password!");
                     }

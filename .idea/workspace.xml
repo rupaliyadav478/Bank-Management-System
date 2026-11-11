@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e3c1f44-3e2a-459c-a841-b18cac7fff98" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bank/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bank/TransactionDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bankmangementsystem.sql" beforeDir="false" afterPath="$PROJECT_DIR$/bankmangementsystem.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bank/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bank/AccountDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bank/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bank/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bank/UserDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

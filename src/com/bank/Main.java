@@ -368,9 +368,11 @@ public class Main {
                                     System.out.println("Invalid choice! Try again.");
                             }
 
+
                             if (dashboardChoice == 5) {
                                 break;
                             }
+
                         }
 
                     } else {
@@ -379,7 +381,16 @@ public class Main {
 
                     break;
 
+                case 3:
+                    System.out.println("\nThank you for using Bank Management System!");
+                    sc.close();
+                    return;
 
+                default:
+                    System.out.println("Invalid choice! Try again.");
             }
 
-}}}
+
+}
+
+    }}

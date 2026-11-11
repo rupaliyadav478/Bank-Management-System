@@ -84,4 +84,29 @@ public class UserDAO {
 
         return -1;
     }
+
+    public boolean changePassword(int userId,
+                                  String currentPassword,
+                                  String newPassword) {
+
+        String sql = "UPDATE users SET password_hash = ? " +
+                "WHERE id = ? AND password_hash = ?";
+
+        try (Connection con = DBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+
+            ps.setString(1, newPassword);
+            ps.setInt(2, userId);
+            ps.setString(3, currentPassword);
+
+            int rowsUpdated = ps.executeUpdate();
+
+            return rowsUpdated > 0;
+
+        } catch (SQLException e) {
+            System.out.println("Password Update Error: " + e.getMessage());
+            return false;
+        }
+    }
+
 }

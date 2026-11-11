@@ -25,6 +25,28 @@ CREATE TABLE accounts (
 
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
+SELECT * FROM accounts;
+SELECT id, username FROM users;
+commit;
+INSERT INTO accounts (
+    account_number,
+    user_id,
+    account_type,
+    balance,
+    status,
+    pin_hash,
+    pin_salt
+)
+VALUES (
+    '100000000001',
+    1,
+    'SAVINGS',
+    0.00,
+    'ACTIVE',
+    'TEMP_PIN',
+    'TEMP_SALT'
+);
+
 
 CREATE TABLE transactions (
     id BIGINT PRIMARY KEY AUTO_INCREMENT,
@@ -39,6 +61,8 @@ CREATE TABLE transactions (
     FOREIGN KEY (account_id) REFERENCES accounts(id),
     FOREIGN KEY (related_account_id) REFERENCES accounts(id)
 );
+
 SHOW TABLES;
 
 DESCRIBE users;
+
